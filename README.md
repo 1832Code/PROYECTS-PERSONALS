@@ -1,0 +1,36 @@
+Tech News Blog 📰💻
+Bienvenido a Tech News Blog, una página web dedicada a compartir las últimas noticias y artículos sobre tecnología, innovación y avances en el mundo digital. Mantente actualizado sobre las tendencias del momento y las herramientas tecnológicas que están cambiando el mundo.
+
+🚀 Características
+Noticias Actualizadas: Publicaciones frecuentes sobre las últimas novedades en tecnología.
+Artículos de Opinión: Análisis profundos sobre temas tecnológicos, incluyendo software, hardware, inteligencia artificial y más.
+Interfaz Responsiva: Diseñado para ofrecer una experiencia de usuario fluida en dispositivos móviles y de escritorio.
+Fácil de Navegar: Menú intuitivo y búsqueda rápida de artículos.
+🛠️ Tecnologías Utilizadas
+HTML5: Estructura de la página.
+CSS3: Estilización del sitio y diseño responsivo.
+JavaScript: Interactividad y funcionalidad dinámica.
+Google Maps API: Integración para mostrar ubicaciones relevantes en la sección de contacto.
+📂 Estructura del Proyecto
+/css            # Archivos de estilo CSS
+/js             # Archivos JavaScript
+/images         # Imágenes utilizadas en la página
+/index.html     # Página principal
+/about.html     # Página de información sobre nosotros
+/contact.html   # Página de contacto con mapa integrado
+🌐 Instalación
+Clona este repositorio:
+git clone https://github.com/1832Code/PROYECTS-PERSONALS.git
+Navega a la carpeta del proyecto:
+cd PROYECTS-PERSONALS
+Abre el archivo index.html en tu navegador favorito.
+📈 Futuras Mejoras
+Implementación de un sistema de comentarios.
+Integración con una API de noticias para mantener el contenido actualizado.
+Optimización de SEO para mejorar la visibilidad en motores de búsqueda.
+📝 Contribuciones
+¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor abre un issue o envía un pull request con tus mejoras.
+
+📧 Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en contactarnos a través de 1832Code@email.com.
+
