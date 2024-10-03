@@ -1,6 +1,6 @@
 .home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("/Block_Noticias/PUBLIC/SRC/FONTS/NAV/fondo01.png");
+    url("../FONTS/NAV/fondo01.png");
   width: 100%; /* Ocupa todo el ancho de la pantalla */
   height: 100vh; /* Ocupa toda la altura de la pantalla */
   background-position: center;
@@ -71,20 +71,27 @@
     padding-left: 0; /* Elimina el padding en pantallas pequeñas */
   }
   .home .general {
-    width: 100%;
-    height: auto;
-    padding: 20px;
+    transform: translateX(-30%);
+    width: 50%;
+    height: 50%;
   }
   .general .card-main {
     position: static; /* Elimina el posicionamiento absoluto en pantallas pequeñas */
     transform: none;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .card-main #phras {
     text-align: center;
+    font-size: 13px;
   }
   .card-main .title {
+    text-align: center;
+    font-size: 15px;
+  }
+  .card-main #btnExplore {
+    padding: 10px;
+    font-size: 12px;
     text-align: center;
   }
 }

@@ -1,0 +1,116 @@
+/* Estilos generales */
+#Contactenos {
+  background-color: #ffffff;
+  padding: 50px 0;
+  font-family: "Arial", sans-serif;
+}
+
+#Contactenos .contact {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50vh;
+  background-color: #d5d3d3;
+}
+
+#Contactenos .contact p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Estilo del contenedor del formulario */
+#Contactenos .form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transform: translateY(-30%);
+}
+.form .form-contact {
+  display: flex;
+  max-width: 350px;
+  padding: 10px 20px;
+  text-align: left;
+}
+/* Estilo de los encabezados */
+#Contactenos .form-contact h5 {
+  font-size: 16px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+#Contactenos .form-contact h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los paneles */
+#Contactenos .panel-02 form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos de los campos del formulario */
+#Contactenos .conteint {
+  margin-bottom: 20px;
+}
+
+#Contactenos .conteint label {
+  font-size: 14px;
+  color: #2c2a2a;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#Contactenos .conteint input,
+#Contactenos .conteint textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+#Contactenos .conteint input::placeholder,
+#Contactenos .conteint textarea::placeholder {
+  color: #969191;
+}
+
+/* Estilos del botón */
+#Contactenos button {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  padding: 13px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#Contactenos #btnMensa:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  #Contactenos .form {
+    padding: 15px;
+  }
+
+  #Contactenos .form-contact h3 {
+    font-size: 24px;
+  }
+
+  #Contactenos .form-contact h5 {
+    font-size: 14px;
+  }
+
+  #Contactenos .contact p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,32 @@
+.galeria {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(15, 15, 15);
+}
+.galeria h3 {
+  text-align: center;
+}
+.galeria h2 {
+  text-align: center;
+}
+.galeria .imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.galeria .imgs img {
+  width: 400px;
+  height: 400px;
+  padding: 15px;
+  border: 1px solid;
+}
+/*Para pantallass maximos de 900px de ancho*/
+@media screen and (max-width: 900px) {
+  .galeria .imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*Para pantallas maximos de 568px de ancho*/
+@media screen and (max-width: 568px) {
+  .galeria .imgs {
+    grid-template-columns: 1fr;
+  }
+}

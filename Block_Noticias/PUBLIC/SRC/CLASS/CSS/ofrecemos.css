@@ -1,0 +1,106 @@
+.ofrecemos {
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+}
+.ofrecemos .bienOfre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("../FONTS/fondoOfrecemos.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+.ofrecemos .bienOfre .text {
+  position: absolute;
+  color: white;
+  font-size: 27px;
+  top: 25%;
+  left: 0%;
+  text-align: center;
+}
+.ofrecemos .bienOfre .text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding: 0 20px;
+}
+/*ESTILOS PARA LAS CARTAS*/
+.ofrecemos .cardsOfre {
+  width: 100%;
+  height: 50vh;
+  font-family: "Times New Roman", Times, serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  transform: translateY(-30%);
+}
+/*ESTILOS PARA LAS CARTAS DE EN MEDIO*/
+.ofrecemos .cardsOfre .card.card05 {
+  transform: translateY(-35%);
+  background-color: #3b82f6;
+  color: white;
+}
+.cardsOfre .card.card05 .card-image span {
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+}
+.cardsOfre .card.card05 .card-header .card-title {
+  color: white;
+  font-weight: bold;
+  font-size: 27px;
+}
+/*----------------------------------------*/
+/*ESTILOS PARA LAS CARTAS NORMAALES*/
+.ofrecemos .cardsOfre .card {
+  margin: 10px;
+  background-color: #e6e7e8;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* sombra */
+  padding: 0 20px;
+}
+.ofrecemos .cardsOfre .card:hover {
+  background-color: #b4bed4;
+}
+.cardsOfre .card .card-image .material-symbols-outlined {
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 50px;
+}
+.card .card-header .card-title {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+.card .card-header .card-subtitle {
+  color: rgb(114, 113, 113);
+  font-size: 17px;
+}
+/*-----------------------------------------------*/
+/*pantalla de 768 px mostrara 2 cards por columna*/
+@media screen and (max-width: 768px) {
+  .ofrecemos .cardsOfre {
+    padding: 40px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
+    gap: 40px;
+    width: 100%;
+    height: 50%;
+  }
+}
+/*pantalla de 568 px mostrara 1 cards por columna*/
+@media screen and (max-width: 568px) {
+  .ofrecemos .cardsOfre {
+    padding: 40px 20px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px;
+    gap: 40px;
+    width: 100%;
+    height: 50%;
+  }
+  .ofrecemos .cardsOfre .card.card05 {
+    transform: translateY(3%);
+  }
+  .ofrecemos .cardsOfre {
+    transform: translateY(1%);
+  }
+}

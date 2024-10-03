@@ -68,89 +68,147 @@ body {
 }
 
 /*HEADER*/
+/*HEADER*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
 
 .header {
   font-size: 18px;
   display: block;
   margin: 10px;
   padding: 18px 22px;
-  background-color: rgb(212, 212, 208);
+  background-color: rgb(255, 255, 255);
 }
+
 .conteiner {
-  display: flex;
+  display: flex; /* Asegura que sea flex para distribuciones */
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 0px 20px;
+  position: relative;
 }
+
 .Menus {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.Menus .name {
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-}
-.Menus .men {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0px 20px;
-  text-align: right;
-}
-nav {
+
+.Menus nav {
   font-family: "Times New Roman", Times, serif;
-  right: 0;
-  margin: 0;
+  width: 100%;
+}
+
+/*PARA PC O LAPTOPS*/
+.nav .desktop {
+  display: flex;
+  justify-content: space-between; /* Distribuye a los lados */
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.desktop .name {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 
 .nav ul {
   display: flex;
   list-style-type: none;
-  gap: 20px;
-  right: 0;
+  gap: 10px;
 }
-.nav ul li {
-  list-style: none;
-}
+
 .nav ul li a {
   font-weight: bold;
-  color: rgb(74, 71, 71);
-  text-align: right;
+  color: rgb(63, 61, 61);
   text-decoration: none;
   padding: 10px 20px;
 }
+
 .nav ul li a:hover {
   color: white;
   background-color: rgb(216, 146, 48);
   border-radius: 5px;
 }
-@media (max-width: 768px) {
+
+/*RESPONSIVO PARA PANTALLAS MÓVILES*/
+@media (max-width: 760px) {
   .header {
-    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .conteiner {
+    flex-direction: column; /* Cambia a columna en lugar de fila */
     text-align: center;
   }
-  .header .conteiner {
-    flex-direction: column;
+
+  .Menus {
+    flex-direction: column; /* Para asegurar que las opciones estén en columna */
     text-align: center;
   }
-  .conteiner .Menus {
-    flex-direction: column;
-    text-align: center;
+
+  .desktop {
+    flex-direction: column; /* Para organizar el contenido de arriba hacia abajo */
+    align-items: center;
   }
-  .Menus .men {
-    flex-direction: column;
-    text-align: center;
-  }
-  .men .nav {
-    text-align: center;
-  }
+
   .nav ul {
     flex-direction: column;
-    text-align: center;
+    gap: 5px; /* Ajusta el espacio entre elementos */
   }
+
   .nav ul li a {
-    text-align: center;
+    padding: 10px; /* Ajusta el espacio en las opciones del menú */
+  }
+}
+/*PARA MOVILES*/
+.nav .movile {
+  display: none;
+}
+
+.movile .links a {
+  color: rgb(59, 57, 57);
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.links a:hover {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+.nav .movile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .movile .header .name {
+  color: rgb(130, 0, 252);
+  font-weight: bold;
+}
+.nav .movile .collapse {
+  display: none;
+}
+.nav .movile .header .more button {
+  border: none;
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 500px) {
+  .nav .movile {
+    display: block;
+  }
+
+  .nav .desktop {
+    display: none;
   }
 }

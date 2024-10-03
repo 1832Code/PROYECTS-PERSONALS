@@ -6,6 +6,19 @@
     <title>Recetas de Comidas</title>
     <link rel="stylesheet" href="../CSS/home.css" />
     <link rel="stylesheet" href="../CSS/nav.css" />
+    <link rel="stylesheet" href="../CSS/nosotros.css" />
+    <link rel="stylesheet" href="../CSS/ofrecemos.css" />
+    <link rel="stylesheet" href="../CSS/galeria.css" />
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <!--Google Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <!--CDNs de Testimonios-->
     <link
       rel="stylesheet"
@@ -25,6 +38,14 @@
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
   </head>
   <body>
@@ -58,20 +79,43 @@
     <header class="header">
       <div class="conteiner">
         <div class="Menus">
-          <div class="name"><h3>Noticias Tecnológicas</h3></div>
-          <div class="men">
-            <nav class="nav">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#Menu">Menu</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Book-Table">Book Table</a></li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="nav">
+            <div class="movile">
+              <div class="header">
+                <div class="name"><h3>Noticias Tecnológicas</h3></div>
+                <div class="more">
+                  <button id="btn">
+                    <span class="material-symbols-outlined"> menu </span>
+                  </button>
+                </div>
+              </div>
+              <div id="links" class="links collapse">
+                <a href="#home" class="hrf">Home</a>
+                <a href="#Nosotros" class="hrf">Nosotros</a>
+                <a href="#ofrecemos" class="hrf">Lo que Ofrecemos</a>
+                <a href="#Galeria" class="hrf">Galeria</a>
+                <a href="#testimonios" class="hrf">Testimonios</a>
+                <a href="#Contact" class="hrf">Contacto</a>
+              </div>
+            </div>
+            <div class="desktop">
+              <div class="name">Noticias Tecnológicas</div>
+              <div class="menu-cont">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#Nosotros">Nosotros</a></li>
+                  <li><a href="#ofrecemos">Lo que Ofrecemos</a></li>
+                  <li><a href="#Galeria">Galeria</a></li>
+                  <li><a href="#BTestimonios">TTestomonios</a></li>
+                  <li><a href="#Contact">Conacto</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
+    <!--PRINCIPAL-->
     <section id="home" class="home">
       <div class="general">
         <div class="card-main">
@@ -87,11 +131,232 @@
         </div>
       </div>
     </section>
-    <section id="AboutUs" class="AboutUs">
-      
+    <!--SOBRE NOSOTROS-->
+    <section id="Nosotros" class="Nosotros">
+      <div class="gridFonts">
+        <div class="gallery">
+          <div class="fondo"></div>
+          <img src="../FONTS/NAV/gallery01.png" alt="" />
+
+          <div class="text">
+            <h5>1.000 + <br /><span>Lectores Sastifactorios</span></h5>
+          </div>
+        </div>
+        <div class="conteiner">
+          <div class="card-01">
+            <span>Acerca de Block de noticias Tecnologicas</span>
+            <h2>Quienes Somos</h2>
+            <p>
+              Block de noticias Tecnologicas es tu fuente confiable para estar
+              al tanto de las últimas noticias en tecnología, innovación y
+              desarrollos digitales. Nuestro equipo de expertos analiza y
+              presenta información relevante para mantener a nuestros lectores
+              bien informados.
+            </p>
+          </div>
+          <div class="subCard">
+            <div class="card-02">
+              <div class="header">
+                <span class="material-symbols-outlined"> book_2 </span>
+              </div>
+              <h3>Nuestra Historia</h3>
+              <p>
+                Desde nuestra fundación, hemos dedicado nuestros esfuerzos a
+                proporcionar contenido de alta calidad y actualizado sobre
+                tecnología. Con un equipo apasionado por la innovación, buscamos
+                ser el recurso principal para entusiastas y profesionales del
+                sector.
+              </p>
+            </div>
+            <div class="card-02">
+              <div class="header">
+                <span class="material-symbols-outlined"> lightbulb </span>
+              </div>
+              <h3>Nuestra Vision</h3>
+              <p>
+                Aspiramos a ser la referencia número uno en noticias
+                tecnológicas, ofreciendo análisis profundos y perspectivas
+                únicas sobre las tendencias más importantes del mercado.
+                Queremos empoderar a nuestros lectores con información crucial
+                para su día a día digital.
+              </p>
+            </div>
+          </div>
+          <button id="btnContact">Contactenos</button>
+        </div>
+      </div>
+    </section>
+    <!--LO QUE OFRECEMOS-->
+    <section class="ofrecemos" id="ofrecemos">
+      <div class="bienOfre">
+        <div class="text">
+          <h2>Lo que ofrecemos</h2>
+          <p>
+            En Block de noticias Tecnológicas, nos enorgullece ofrecer una
+            variedad de características que enriquecen la experiencia de
+            nuestros usuarios. Desde noticias actualizadas hasta análisis
+            profundos, nuestro contenido está diseñado para mantenerte bien
+            informado.
+          </p>
+        </div>
+      </div>
+      <div class="cardsOfre">
+        <!--Cards 01-->
+        <div class="card">
+          <div class="card-image">
+            <span class="material-symbols-outlined"> full_coverage </span>
+          </div>
+          <div class="card-header">
+            <div class="card-title h5">Noticias Recientes</div>
+            <div class="card-subtitle text-gray">
+              Publicaciones frecuentes y actualizadas sobre las últimas
+              novedades en el mundo de la tecnología y la innovación digital.
+            </div>
+          </div>
+        </div>
+        <!--cards 02-->
+        <div class="card card05">
+          <div class="card-image">
+            <span class="material-symbols-outlined"> description </span>
+          </div>
+          <div class="card-header">
+            <div class="card-title h5">Artículos de opinión</div>
+            <div class="card-subtitle text-gray">
+              Análisis detallados y perspicaces sobre diversos temas
+              tecnológicos, desde software y hardware hasta inteligencia
+              artificial.
+            </div>
+          </div>
+        </div>
+        <!--cards 03-->
+        <div class="card">
+          <div class="card-image">
+            <span class="material-symbols-outlined"> devices </span>
+          </div>
+          <div class="card-header">
+            <div class="card-title h5">Interfaz responsiva</div>
+            <div class="card-subtitle text-gray">
+              Un diseño optimizado para ofrecer una experiencia de usuario
+              fluida tanto en dispositivos móviles como de escritorio.
+            </div>
+          </div>
+        </div>
+        <!--cards 004-->
+        <div class="card">
+          <div class="card-image">
+            <span class="material-symbols-outlined"> manage_search </span>
+          </div>
+          <div class="card-header">
+            <div class="card-title h5">Fácil navegación</div>
+            <div class="card-subtitle text-gray">
+              Un menú intuitivo y herramientas de búsqueda rápida para encontrar
+              los artículos que más te interesan de forma eficiente.
+            </div>
+          </div>
+        </div>
+        <!--cards 05-->
+        <div class="card card05">
+          <div class="card-image">
+            <span class="material-symbols-outlined"> forum </span>
+          </div>
+          <div class="card-header">
+            <div class="card-title h5">Foros Activos</div>
+            <div class="card-subtitle text-gray">
+              Participa en discusiones vibrantes y comparte tus ideas con una
+              comunidad apasionada por la tecnología.
+            </div>
+          </div>
+        </div>
+        <!---cards 06-->
+        <div class="card">
+          <div class="card-image">
+            <span class="material-symbols-outlined">
+              notifications_active
+            </span>
+          </div>
+          <div class="card-header">
+            <div class="card-title h5">Alertas personalizadas</div>
+            <div class="card-subtitle text-gray">
+              Recibe notificaciones sobre las noticias y artículos más
+              relevantes según tus intereses.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Galeria-->
+    <section class="galeria" id="Galeria">
+      <h3>Galeria</h3>
+      <h2>Contenido visual de nuestro sitio</h2>
+      <div class="imgs">
+        <img src="../FONTS/GALERIA/img1.jpg" alt="description" />
+        <img src="../FONTS/GALERIA/im2.jpg" alt="description" />
+        <img src="../FONTS/GALERIA/img3.jpg" alt="description" />
+        <img src="../FONTS/GALERIA/img4.jpg" alt="description" />
+        <img src="../FONTS/GALERIA/img5.jpg" alt="description" />
+        <img src="../FONTS/GALERIA/img6.jpg" alt="description" />
+        <img src="../FONTS/GALERIA/img7.jpg" alt="description" />
+        <img src="../FONTS/GALERIA/img8.jpg" alt="description" />
+        <img src="../FONTS/GALERIA/img9.jpg" alt="description" />
+      </div>
+    </section>
+    <!--TESTIMONIOS-->
+    <section id="testimonios" class="testimonios">
+      <div class="cards-test">
+        <div class="card">as</div>
+        <div class="card">as</div>
+        <div class="card">asd</div>
+      </div>
+    </section>
+    <!--CONTACTENOS-->
+    <section id="Contactenos" class="Contactenos">
+      <div class="contact">
+        <p>
+          Estamos aquí para responder a tus preguntas y recibir tus comentarios.
+          No dudes en ponerte en contacto con nosotros a través de los
+          siguientes medios.
+        </p>
+      </div>
+      <div class="form">
+        <div class="form-contact">
+          <div class="panel-01">
+            <h5>Contactenos</h5>
+            <h3>Informacion del Contacto</h3>
+          </div>
+          <div class="panel-02">
+            <form action="form">
+              <div class="conteint">
+                <label for="text">name</label>
+                <input type="text" placeholder="Joel" />
+              </div>
+              <div class="conteint">
+                <label for="email">name</label>
+                <input type="email" placeholder="joel@gmail.com" />
+              </div>
+              <div class="conteint">
+                <label for="text">Numero de Telefono</label>
+                <input type="text" placeholder="982342342" />
+              </div>
+              <div class="conteint">
+                <label for="text">Mensaje</label>
+                <textarea name="text" id="text" placeholder="Mensaje...">
+                </textarea>
+              </div>
+              <button id=" btnMensa">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <script>
+      const btn = document.querySelector("#btn");
+      const links = document.querySelector("#links");
+      btn.addEventListener("click", (e) => {
+        links.classList.toggle("collapse");
+      });
+    </script>
     <!-- OwlCarousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="/PROYECT_HTML/CONTROLLER/SERVER/Test.js"></script>

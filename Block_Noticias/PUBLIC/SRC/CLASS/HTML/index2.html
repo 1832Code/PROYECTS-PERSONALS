@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="movile">
+        <div class="header">
+          <div class="logo">Noticias Tecnologicas</div>
+          <div class="more">
+            <button id="btn">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+          </div>
+        </div>
+        <div id="links" class="links collapse">
+          <a href="#" class="hrf">Home</a>
+          <a href="#" class="hrf">Menu</a>
+          <a href="#" class="hrf">About</a>
+          <a href="#" class="hrf">Book Table</a>
+          <a href="#" class="hrf">Search</a>
+        </div>
+      </div>
+      <div class="desktop">
+        <div class="logo">Noticias Tecnologicas</div>
+        <div class="primary">
+          <a href="#" class="hrf">Home</a>
+          <a href="#" class="hrf">Menu</a>
+          <a href="#" class="hrf">About</a>
+        </div>
+        <div class="secondary full">
+          <a href="#" class="hrf">Search</a>
+          <a href="#" class="hrf">Book Table</a>
+          <a href="#" class="hrf">Search</a>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const btn = document.querySelector("#btn");
+      const links = document.querySelector("#links");
+      btn.addEventListener("click", (e) => {
+        links.classList.toggle("collapse");
+      });
+    </script>
+  </body>
+</html>
