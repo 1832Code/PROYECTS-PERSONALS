@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: "Times New Roman", Times, serif;
+        background-image: linear-gradient(
+          135deg,
+          rgba(10, 233, 138, 0.8) -30%,
+          rgba(10, 233, 138, 0.2) 10%,
+          rgba(19, 22, 28, 0.5) 50%,
+          #13161c 60%
+        ); /* Eliminar el punto y coma extra aquí */
+      }
+
+      .codigo-contenedor {
+        width: 40%;
+        height: auto;
+        font-family: "Times New Roman", Times, serif;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.688),
+          rgba(0, 0, 0, 0.9),
+          rgba(0, 0, 0, 0.829)
+        ); /* Color de fondo */
+        color: #ffffff;
+        border: 2px solid #07e363; /* Borde */
+        padding: 10px; /* Espaciado interno */
+        overflow-x: auto; /* Permitir desplazamiento horizontal */
+        font-family: monospace; /* Fuente monoespaciada */
+      }
+      .codigo-contenedor ::selection {
+        background-color: #363635; /* Color de fondo al seleccionar */
+        color: #fefefe; /* Color del texto al seleccionar */
+      }
+      button {
+        margin: 10px;
+        border: none;
+        background-color: rgb(46, 46, 44);
+        padding: 10px 20px;
+        border-radius: 4px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      }
+      button:hover {
+        cursor: pointer;
+        transform: scale(
+          1.1
+        ); /* Cambiar a scale(1.1) para un efecto más suave */
+        background-color: #13161c;
+        color: #fff;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="codigo-contenedor">
+      <pre><code>
+button {
+    margin: 10px;
+    border: none;
+    background-color: rgb(46, 46, 44);
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+        </code></pre>
+    </div>
+    <button onclick="copiarCodigo()">Copiar Código</button>
+
+    <script>
+      function copiarCodigo() {
+        const codigo = document.querySelector(".codigo-contenedor code");
+        const texto = codigo.innerText;
+
+        navigator.clipboard
+          .writeText(texto)
+          .then(() => {
+            console.log("Código copiado al portapapeles!");
+          })
+          .catch((err) => {
+            console.error("Error al copiar el código: ", err);
+          });
+      }
+    </script>
+  </body>
+</html>

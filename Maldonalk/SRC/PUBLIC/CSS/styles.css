@@ -126,35 +126,56 @@ body {
   color: black;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
+  margin: 25px;
+}
+.textMain button:hover {
+  background-color: rgb(244, 153, 17);
+  font-weight: bold;
 }
 
 /*Estilos de la Seccion McDonaldsOffers*/
+.McDonaldsOffers {
+  width: 100%;
+  height: 130vh;
+}
 .conteiners-Cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100vh;
   gap: 20px; /*Espacio entre elementos*/
-  position: relative; /**/
   margin-top: 15px; /*agregar un espacio (o margen) en la parte superior de un elemento.*/
 }
 .conteiners-Cards .cards {
-  width: 400px;
   position: absolute;
-  left: 10%;
+  width: 70%;
   border: none;
+  padding: 20px 20px;
+  left: 15%;
   display: grid; /* Cambia flex a grid para mejor control de las tarjetas */
-  grid-template-columns: 1fr 1fr; /* Dos tarjetas por fila */
+  grid-template-columns: repeat(2, 1fr); /* Dos tarjetas por fila */
   gap: 20px; /* Espacio entre tarjetas dentro de .cards */
   border-radius: 8px; /* Bordes redondeados */
-  background-color: #fff; /* Fondo blanco para las tarjetas */
   transition: transform 0.3s ease; /* Efecto suave al hacer hover */
 }
+.McDonaldsOffers .conteiners-Cards .cards:hover {
+  cursor: pointer;
+}
 .cards .card {
+  width: 300px;
+  height: auto;
   border: none;
   border-radius: 8px; /* Bordes redondeados */
   background-color: #fff; /* Fondo blanco para las tarjetas */
   transition: transform 0.3s ease; /* Efecto suave al hacer hover */
 }
-.cards .card .card-image {
+.conteiners-Cards .cards .card:hover {
+  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+}
+.cards .card .card-image img {
   width: 100%;
   height: auto;
   display: block;
@@ -181,4 +202,87 @@ body {
   border-radius: 1px;
   padding: 10px 20px;
   background-color: rgba(255, 188, 13, 1);
+  font-weight: bold;
+  cursor: pointer;
+}
+.conteiners-Cards .cards .card .card-footer button:hover {
+  background-color: rgb(232, 153, 16);
+  cursor: pointer;
+}
+
+/**Estilos Para la Sección Apps */
+.aplicaciones {
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(255, 188, 13, 1);
+}
+.aplicaciones .Apps {
+  width: 100%;
+  height: 50vh;
+}
+.aplicaciones .Apps .cards {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/*Estilos para la imagen*/
+.aplicaciones .Apps .cards .card-01 {
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+.aplicaciones .Apps .cards .card-01 img {
+  width: 390px;
+  height: auto;
+}
+.aplicaciones .Apps .cards .card-02 {
+  width: 400px;
+  height: auto;
+}
+.aplicaciones .Apps .cards .card-02 .Header span {
+  font-size: 51px;
+  font-weight: bold;
+  color: black;
+}
+.aplicaciones .Apps .cards .card-02 .text p {
+  font-size: 12px;
+  color: black;
+}
+/* Estilos para los botones apps */
+.btn-logos {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.btnLogo {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.btnLogo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Estilos específicos para App Store */
+.btnLogo img[alt="App Store"] {
+  width: 150px;
+  height: 50px;
+}
+
+/* Estilos específicos para Google Play */
+.btnLogo img[alt="Google Play"] {
+  width: 170px;
+  height: auto;
 }

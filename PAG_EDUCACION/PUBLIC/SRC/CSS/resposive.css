@@ -1,0 +1,561 @@
+/**ESTILOS PARA PANTALLAS LAPTOP ETC*/
+
+/**ESTILOS PARA EL NAV*/
+@media screen and (max-width: 768px) {
+  header .nav-deskto {
+  }
+  header .nav-deskto .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .nav-deskto .container .header {
+    display: flex;
+    justify-content: center;
+  }
+  header .nav-deskto .container .nav-bar {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  header .nav-deskto .container .nav-bar nav ul {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  header .nav-deskto .container .Register {
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+  }
+  header main .informaction {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+  }
+  header main .informaction .fraseFirst {
+    text-align: center;
+  }
+  header main .informaction .fraseFirst h1 {
+    font-size: 32px;
+  }
+  header main .informaction .fraseFirst p {
+    font-size: 18px;
+  }
+  .footer {
+    width: 100%;
+    margin: 0;
+  }
+}
+/**Estilos para TOP CATEGORIES*/
+@media screen and (max-width: 768px) {
+  .categories {
+    width: 100%;
+  }
+  .categories .carrusel-scrool {
+    width: 100%;
+  }
+  .categories .carrusel-scrool .title-02 {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+  }
+  .categories .carrusel-scrool .carousel {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/**Estilos para Nosotros*/
+@media screen and (max-width: 768px) {
+  .Nosotros {
+    width: 100%;
+    height: 100vh;
+  }
+  .Nosotros .container-expert {
+    width: 100%;
+    height: 100vh;
+    display: block;
+  }
+  .Nosotros .container-expert .global {
+    width: 100%;
+    height: auto;
+  }
+  .Nosotros .container-expert .global img {
+    width: 50%;
+    height: auto;
+  }
+  .Nosotros .container-expert .information {
+    width: 100%;
+    text-align: center;
+  }
+  .Nosotros .container-expert .information .info {
+    font-size: 32px;
+    text-align: center;
+  }
+  .Nosotros .container-expert .informaction .info h3,
+  b {
+    font-size: 32px;
+    text-align: center;
+  }
+  .Nosotros .container-expert .information .paraffo p {
+    font-size: 16px;
+  }
+}
+/**Estilos para Courses*/
+@media screen and (max-width: 768px) {
+  .courses {
+    width: 100%;
+    height: 180vh;
+  }
+  .courses .courses-explore {
+    width: 100%;
+    height: 180vh;
+  }
+  .courses .courses-explore h2 {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+  .courses .courses-explore .gallery-courses {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 6%;
+  }
+  .courses .courses-explore .gallery-courses .card-01 {
+    width: 70%;
+    height: 230px;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .cards-header {
+    width: 100%;
+    height: auto;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .cards-header img {
+    width: 100%;
+    height: auto;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .texto .text {
+    font-size: 14px;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .texto .text .estrellas {
+    font-size: 14px;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .footer-card {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 50%;
+    height: auto;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .footer-card .btns {
+    width: 100%;
+    display: flex;
+  }
+  .courses
+    .courses-explore
+    .gallery-courses
+    .card-01
+    .footer-card
+    .btns
+    button {
+    font-size: 14px;
+    margin: 1px;
+  }
+
+  .courses .courses-explore .gallery-courses .card-01 .footer-card .precio h4 {
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+/**Estilos para Examination*/
+@media screen and (max-width: 768px) {
+  .examination {
+    width: 100%;
+    height: 110vh;
+  }
+  .examination .category-examen {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .examination .category-examen .informat {
+    width: 100%;
+    height: 60vh;
+    padding-left: 0;
+  }
+  .examination .category-examen .informat .fras {
+    text-align: center;
+    padding-left: 0;
+  }
+  .examination .category-examen .informat .fras h3 {
+    font-size: 32px;
+  }
+  .examination .category-examen .informat .parraf {
+    text-align: center;
+    padding-left: 0;
+  }
+  .examination .category-examen .informat .parraf p {
+    font-size: 16px;
+  }
+  .examination .category-examen .informat .btnTake {
+    text-align: center;
+    padding-left: 0;
+  }
+  .examination .category-examen .img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .examination .category-examen .img img {
+    width: 50%;
+    height: auto;
+  }
+}
+/**Estilos para Contact*/
+@media screen and (max-width: 768px) {
+  .Contact {
+    width: 100%;
+    height: 175vh;
+  }
+  .Contact .container-contact {
+    width: 100%;
+    height: 175vh;
+    background-color: #ffe7db;
+  }
+  .Contact .container-contact .panels-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Contact .container-contact .panels-contact .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+  }
+  .Contact .container-contact .panels-contact .img img {
+    width: 65%;
+    height: auto;
+  }
+  .Contact .container-contact .panels-contact .form-contact {
+    width: 100%;
+    height: 80vh;
+  }
+  .container-contact .panels-contact .form-contact .panel-form {
+    width: 70%;
+  }
+  .container-contact .panels-contact .form-contact .panel-form .btnRegister {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+/**Estilos pra Publicaciones*/
+@media screen and (max-width: 768px) {
+  .container-public {
+    width: 100%;
+    height: 150vh;
+  }
+  .container-public .sub-container {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+  /*para la imagen*/
+  .container-public .sub-container .public-img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    height: 70vh;
+    margin: 10px;
+  }
+  .container-public .sub-container .public-img img {
+    width: 90%;
+    height: auto;
+  }
+  /*para el contenido*/
+  .container-public .sub-container .informacion-public {
+    width: 100%;
+    height: 80vh;
+  }
+  .container-public .sub-container .informacion-public .card-public {
+    width: 98%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-public .sub-container .informacion-public .card-public .title h3 {
+    font-size: 32px;
+  }
+  .container-public
+    .sub-container
+    .informacion-public
+    .card-public
+    .parrafo-public
+    p {
+    font-size: 16px;
+  }
+}
+/**
+
+*/
+
+/**Estilos para Ocultar el nav de telefonos en pantallas grandes*/
+@media screen and (min-width: 480px) {
+  header .nav-movile {
+    display: none;
+  }
+}
+/**
+
+
+*/
+/**Estilos para El Nav en Telefonos*/
+@media screen and (max-width: 480px) {
+  /*Ocultamos el nav de pantalla grande*/
+  header .nav-deskto {
+    display: none;
+  }
+  /*Habilitamos el nav de telefonos*/
+  header .nav-movile {
+    display: block;
+  }
+  header .nav-movile .movile-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav-movile .movile-header .left-Options {
+    display: flex;
+    gap: 20px;
+  }
+  header .nav-movile #btn3-options {
+    display: flex;
+  }
+  header .nav-movile #btn3-options svg {
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+  }
+  header .nav-movile .movile-header .rigth-Perfi {
+    display: flex;
+  }
+  header .nav-movile .movile-header.rigth-Perfi {
+    display: flex;
+  }
+  header .nav-movile .movile-header .rigth-Perfi #btnPerfil svg {
+    width: 34px;
+    height: 34px;
+    color: #f77e23;
+    background-color: transparent;
+  }
+  /*Estilos para el main resposivo*/
+  header {
+    height: 100vh;
+  }
+  header main {
+    width: 100%;
+  }
+  header main .informaction {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0%;
+    top: 15%;
+  }
+  header main .informaction .fraseFirst {
+    text-align: center;
+  }
+  header main .informaction .fraseFirst h1 {
+    font-size: 32px;
+  }
+  header main .informaction .fraseFirst p {
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+  }
+  header main .informaction .btnGetStar #btnStart:hover {
+    background-color: #f06901;
+    color: white;
+  }
+  /*Esttilos para el footer del header*/
+  .footer {
+    width: 100%;
+    margin: 0;
+  }
+  .footer .cards-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+}
+/**Estilos para TOP CATEGORIES*/
+@media screen and (max-width: 480px) {
+  .categories {
+    width: 100%;
+  }
+  .categories .carrusel-scrool {
+    width: 100%;
+  }
+  .categories .carrusel-scrool .title-02 {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+  }
+  .categories .carrusel-scrool .carousel {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/**Estilos para Nosotros*/
+@media screen and (max-width: 480px) {
+  .Nosotros {
+    width: 100%;
+    height: 100vh;
+  }
+  .Nosotros .container-expert {
+    width: 100%;
+    height: 100vh;
+    display: block;
+  }
+  .Nosotros .container-expert .global {
+    width: 90%;
+    height: auto;
+  }
+  .Nosotros .container-expert .information {
+    width: 100%;
+    text-align: center;
+  }
+  .Nosotros .container-expert .information .info {
+    font-size: 32px;
+    text-align: center;
+  }
+  .Nosotros .container-expert .informaction .info h3,
+  b {
+    font-size: 32px;
+    text-align: center;
+  }
+  .Nosotros .container-expert .information .paraffo p {
+    font-size: 16px;
+  }
+}
+/**Estilos para Courses*/
+@media screen and (max-width: 480px) {
+  .courses {
+    width: 100%;
+    height: 250vh;
+    background-color: #ded9d6;
+  }
+  .courses .courses-explore {
+    width: 100%;
+    height: 250vh;
+  }
+  .courses .courses-explore h2 {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+  .courses .courses-explore .gallery-courses {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .courses .courses-explore .gallery-courses .card-01 {
+    width: 80%;
+    height: auto;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .cards-header {
+    width: 100%;
+    height: auto;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .cards-header img {
+    width: 100%;
+    height: auto;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .texto .text {
+    font-size: 14px;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .texto .text .estrellas {
+    font-size: 14px;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .footer-card {
+    font-size: 12px;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .courses .courses-explore .gallery-courses .card-01 .footer-card .btns {
+    display: flex;
+  }
+}
+/**Estilos para Examination*/
+@media screen and (max-width: 480px) {
+  .examination {
+    width: 100%;
+    height: 110vh;
+  }
+  .examination .category-examen {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .examination .category-examen .informat {
+    width: 100%;
+    height: 60vh;
+    padding-left: 0;
+  }
+  .examination .category-examen .informat .fras {
+    text-align: center;
+    padding-left: 0;
+  }
+  .examination .category-examen .informat .fras h3 {
+    font-size: 32px;
+  }
+  .examination .category-examen .informat .parraf {
+    text-align: center;
+    padding-left: 0;
+  }
+  .examination .category-examen .informat .parraf p {
+    font-size: 16px;
+  }
+  .examination .category-examen .informat .btnTake {
+    text-align: center;
+    padding-left: 0;
+  }
+  .examination .category-examen .img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .examination .category-examen .img img {
+    width: 50%;
+    height: auto;
+  }
+}
